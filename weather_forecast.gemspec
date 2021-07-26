@@ -22,7 +22,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rspec"
   # Specify which files should be added to the gem when it is released.
   # The `git ls-files -z` loads the files in the RubyGem that have been added into git.
-  spec.files         = `git ls-files`.split("\n")
+#   spec.files         = `git ls-files`.split("\n")
 #   spec.bindir        = "exe"
   spec.executables   = `git ls-files`.split("\n").map{|f| f =~ /^bin\/(.*)/ ? $1 : nil}.compact
   spec.require_paths = ["lib"]
