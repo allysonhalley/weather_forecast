@@ -36,25 +36,13 @@ module WeatherForecast
 	class Exception < StandardError
 	end
 
-	class Exception < StandardError
-	end
-
 	module Exceptions	
-		##
-		# Exception to handle unknown location
 
+		# Exception to handle unknown location
 		class UnknownLocation < WeatherForecast::Exception
 		end
 
-		##
-		# Exception to tell that the API key isn't authorized
-
-		class Unauthorized < WeatherForecast::Exception
-		end
-
-		##
-		# Exception to handle data error
-
+		# Exception to data error in PARSE
 		class DataError < WeatherForecast::Exception
 		end
 

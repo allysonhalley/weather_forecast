@@ -16,10 +16,10 @@ module WeatherForecast
 			WeatherForecast::Weather.new(data)
 		end
 
-		# def forecast(location)
-		# 	data = make_request(WeatherForecast::Constants::URLS[:forecast], location)
-		# 	WeatherForecast::Forecast.new(data)
-		# end
+		def forecast(location)
+			data = make_request(WeatherForecast::Constants::URLS[:forecast], location)
+			WeatherForecast::Forecast.new(data)
+		end
 		
 
 		private
